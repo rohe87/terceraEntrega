@@ -1,0 +1,2 @@
+Agrege en este proyecto los import de las variables,mixin, extend y map-get 
+para los distintos textos que contiene mi proyecto 

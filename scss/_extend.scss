@@ -1,0 +1,11 @@
+
+.textt{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:lighter;
+    text-align: justify;
+}
+.demasEstilos{
+    font-size: 80px;
+    @extend .textt;
+}
+

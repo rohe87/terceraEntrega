@@ -1,0 +1,36 @@
+.colorNav {
+	background-color: $color-principal;
+}
+ul#navv {
+	li {
+		a {
+			position: relative;
+			color: #141421;
+			overflow: hidden;
+			&:before {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				z-index: 1;
+				padding: 10px 20px;
+				background: none repeat scroll 0% 0% $color-principal;
+				content: attr(title);
+				transition: transform 0.3 ease 0s;
+				z-index: 2;
+			}
+			span {
+				display: block;
+				position: relative;
+				padding: 10px 20px;
+				background: none repeat scroll 0% 0% white;
+				transition: transform 0.3s ease 0s;
+				z-index: 2;
+			}
+			&:hover {
+				span {
+					transform: translateX(100%);
+				}
+			}
+		}
+	}
+}

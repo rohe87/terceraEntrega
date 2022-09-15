@@ -1,0 +1,30 @@
+$mapRedes:(facebook:#4e64b5,twitter:#00aced,instagram: #9a8f62,youtube:#c82929,telegram:#2ca5e0);
+
+@each $redSocial, $color in $mapRedes{
+    .#{$redSocial}{
+        color: $color;
+    }
+}
+
+
+$estilo:(color:beige, tamFuente: 20px);
+.card-text{
+    background-color:map-get($estilo, color );
+    font-size: map-get( $estilo, tamFuente );
+}
+
+$estilo:(color:#176585, tamFuente: 80px);
+.text-red{
+    background-color:map-get($estilo, color );
+    font-size: map-get( $estilo, tamFuente );
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+$estilo:(color:#6cc4b9, tamFuente: 15px);
+.card-titleNos{
+    background-color:map-get($estilo, color );
+    font-size: map-get( $estilo, tamFuente );
+    
+}
+

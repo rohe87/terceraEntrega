@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
+      <meta name="description" content="Plantilla de contacto para registro  en la pagina web de tmmbrummer - airtex Puebla">
+      <!-- linkbootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"/>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+      <!-- link css -->
+      <link rel="stylesheet" href="css/style.css" />
+      <title>Contacto</title>
+  </head>
+  <body class="container-fluid">
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid colorNav">
+        <a class="navbar-brand" href="index.html"
+          ><img src="img/airtex.png" alt="logo" class="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul id="navv" class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active"   title="Home" href="index.html"> <span><i class="bi bi-house-door"> Home</i></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" title="Nosotros" href="nosotros.html"><span><i class="bi bi-people"> Nosotros</i></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  title="Productos" href="productos.html"><span><i class="bi bi-trophy"> Productos</i></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  title="Ubicacion" href="ubicacion.html"><span><i class="bi bi-geo-alt"> Ubicación</i></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  title="Contacto" href="contacto.html"><span><i class="bi bi-envelope"> Contacto</i></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- carrousel -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="img/banner_airtex_home.jpg"
+            class="d-block w-100"
+            alt="carousel1"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/FYBuBvOWIAIMnP8.jpg"
+            class="d-block w-100"
+            alt="carousel2"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <hr>
+    <!-- cards contenido -->
+        <div class="row form_wrap">
+          <div class="col-lg-4 col-12 cantact_info">
+              <div class="info_title">
+                  <span class="fa fa-user-circle"></span>
+                  <p><img src="img/airtex.png" alt="logoSombra"></p>
+                  <h1>CONTACTANOS</h1>
+              </div>
+              <div class="info_items">
+                  <p><span class="fa fa-mobile"></span>Correo: contacto@airtex.com</p>
+                  <p><span class="fa fa-mobile"></span>Asistencia Técnica llamada sin costo</p>
+                  <p><span class="fa fa-mobile"></span>Telefono: +52 222 800 7000</p>
+              </div>
+          </div>
+
+          <form class="col-lg-8 col-12 form_contact">
+              <h3>Envia un mensaje</h3>
+              <div class="user_info">
+                <div class="mb-3">
+                  <label for="names">Nombre *</label>
+                  <input type="text" id="names">
+                </div>
+                <div class="mb-3">
+                  <label for="phone">Telefono / Celular *</label>
+                  <input type="text" id="phone">
+                </div>
+                  <label for="email">Correo electronico *</label>
+                  <input type="text" id="email">
+                <div class="mb-3">
+                  <label for="mensaje">Mensaje *</label>
+                  <textarea id="mensaje"></textarea>
+                </div>
+                  <input type="button" value="Enviar Mensaje" id="btnSend">
+              </div>
+          </form>
+        </div>
+      
+    <hr>
+    <!-- footer -->
+    <footer>
+		<div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <nav id="footer-navigation" class="site-navigation footer-navigation centered-box" role="navigation">
+                <ul id="footer-menu" class="nav-menu styled clearfix inline-inside">
+                  <li id="menu-item-26" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26"><a href="#">Support</a></li>
+                  <li id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27"><a href="#">Contact Us</a></li>
+                  
+                </ul>
+              </nav>
+            </div>
+            <div class="col-md-2 pieImg">
+              <img src="img/favicon.png" class="img-rounded" alt="logoFavicon" width="50" height="50">
+            </div>
+
+            <div class="col-md-5">
+              <div id="footer-socials">
+                <div class="socials inline-inside socials-colored">
+
+                  <a href="#" target="_blank" title="Facebook" class="socials-item">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="#" target="_blank" title="Twitter" class="socials-item">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                  <a href="#" target="_blank" title="Instagram" class="socials-item">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="#" target="_blank" title="YouTube" class="socials-item">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                  <a href="#" target="_blank" title="Telegram" class="socials-item">
+                    <i class="bi bi-telegram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color:  #1c1f2f ">
+        Todos los Derechos Reservados Erik Rojas - CoderHouse© 2022 Copyright
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <!-- JavaScript Bundle with Popper boottrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+ 
+  </body>
+</html>

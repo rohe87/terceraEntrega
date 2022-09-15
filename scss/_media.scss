@@ -1,0 +1,13 @@
+@media (max-width:600px) {
+	.media {
+		color: blue;
+	}
+}
+@media (min-width:601px) and (max-width:900px) {
+	.card-title {
+		color: red;
+	}
+	.texto {
+		color: bisque;
+	}
+}
