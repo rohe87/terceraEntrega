@@ -10,35 +10,54 @@
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg); }
 
-body {
-  background-color: #a3bad2; }
+.card {
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease-out;
+  cursor: default; }
 
-.colorNav {
-  background-color: #a3bad2; }
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%); }
 
-ul#navv li a {
-  position: relative;
-  color: #141421;
-  overflow: hidden; }
-  ul#navv li a:before {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
-    padding: 10px 20px;
-    background: none repeat scroll 0% 0% #a3bad2;
-    content: attr(title);
-    transition: transform 0.3 ease 0s;
-    z-index: 2; }
-  ul#navv li a span {
-    display: block;
+.nav-item {
+  line-height: 42px;
+  padding: 1px;
+  border: none;
+  margin: 10px; }
+  .nav-item span {
     position: relative;
-    padding: 10px 20px;
-    background: none repeat scroll 0% 0% white;
-    transition: transform 0.3s ease 0s;
-    z-index: 2; }
-  ul#navv li a:hover span {
-    transform: translateX(100%); }
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: black; }
+    .nav-item span:before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      background: #fb4b02;
+      box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9), -4px -4px 5px 0px rgba(255, 255, 255, 0.9), 7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+      width: 3px;
+      height: 0%; }
+    .nav-item span:after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      background: #fb4b02;
+      box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9), -4px -4px 5px 0px rgba(255, 255, 255, 0.9), 7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+      height: 3px;
+      width: 0%; }
+    .nav-item span:hover:before {
+      height: 100%; }
+    .nav-item span:hover:after {
+      width: 100%; }
 
 footer {
   color: #b0b0b0; }
@@ -336,16 +355,13 @@ textarea {
   color: #2ca5e0; }
 
 .card-text {
-  background-color: beige;
   font-size: 20px; }
 
 .text-red {
-  background-color: #176585;
   font-size: 80px;
   font-family: 'Times New Roman', Times, serif; }
 
 .card-titleNos {
-  background-color: #6cc4b9;
   font-size: 15px; }
 
 .textt, .demasEstilos {
@@ -360,67 +376,14 @@ textarea {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
   text-align: justify;
-  font-weight: bold; }
-
-.titulo {
-  color: red; }
-
-.tituloContact {
-  color: red;
-  text-align: center; }
-
-img {
-  border-style: none;
-  height: auto;
-  max-width: 100%;
-  vertical-align: middle; }
-
-.cardIndex {
-  opacity: 0.7;
-  text-align: center;
-  background-color: #001b48; }
-
-.card-titleProd {
-  text-align: center;
-  font-size: 30px;
-  color: #001b48; }
-
-.card-titleUbi {
-  text-align: center;
-  font-size: 30px;
-  color: #001b48; }
-
-.card-textUbi {
-  font-size: 25px;
-  font-style: inherit;
-  text-decoration: solid; }
-
-#historia {
-  text-align: right;
-  color: #2e2e4c; }
-
-#subNos {
-  text-align: right; }
-
-.subh2 {
-  color: white; }
-
-.card-titleNos {
-  font-size: 30px;
-  text-align: center; }
-
-.card-textNos p {
-  font-size: medium;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-
-.vmv {
-  width: 50px; }
+  margin: 10px;
+  padding: 10px; }
 
 .form_wrap {
   width: 70vw;
   margin: 10px auto;
   display: flex;
-  background: #fff;
+  background: #d5d5e9;
   border-radius: 30px; }
 
 .cantact_info {
@@ -487,7 +450,7 @@ form.form_contact {
   form.form_contact h2 {
     font-size: 25px;
     font-weight: 600;
-    color: white;
+    color: black;
     margin-bottom: 30px; }
   form.form_contact .user_info {
     display: flex;
@@ -575,6 +538,110 @@ form.form_contact {
   padding: 3px 10px;
   margin-top: 10px;
   background: #E25151;
-  color: #fff;
   border: 2px solid #B14141;
   cursor: pointer; }
+
+#historia {
+  text-align: right;
+  color: #2e2e4c; }
+
+#subNos {
+  text-align: right; }
+
+.subh2 {
+  color: black; }
+
+.ptextN {
+  padding: 10 px;
+  margin: 20px; }
+
+.card-titleNos {
+  font-size: 30px;
+  text-align: center; }
+
+.titulo {
+  color: red; }
+
+.tituloContact {
+  color: red;
+  text-align: center; }
+
+img {
+  border-style: none;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle; }
+
+.cardIndex {
+  opacity: 0.7;
+  text-align: center;
+  background-color: white;
+  margin: 30px; }
+  .cardIndex .card-bodyp {
+    margin: 20px;
+    padding: 20px; }
+
+.card-titleProd {
+  text-align: center;
+  font-size: 30px;
+  color: white; }
+
+.cardG {
+  height: 550px;
+  width: 400px;
+  align-items: center; }
+
+.cardA {
+  height: 550px;
+  width: 400px;
+  align-items: center; }
+
+.card-titleUbi {
+  text-align: center;
+  font-size: 30px;
+  color: white; }
+
+.vmv {
+  width: 50px; }
+
+#botonS {
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: #ff1b00;
+  background: linear-gradient(0deg, #ff1b00 0%, #fb4b02 100%); }
+  #botonS:hover {
+    color: black;
+    box-shadow: none; }
+    #botonS:hover:before {
+      width: 100%;
+      transition: 800ms ease all; }
+    #botonS:hover:after {
+      width: 100%;
+      transition: 800ms ease all; }
+  #botonS:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #f0094a;
+    box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003, 4px 4px 5px 0px #0002;
+    transition: 400ms ease all; }
+  #botonS:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #f0094a;
+    box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003, 4px 4px 5px 0px #0002;
+    transition: 400ms ease all;
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0; }
